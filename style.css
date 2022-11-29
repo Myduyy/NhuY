@@ -58,3 +58,30 @@ form button:hover{
 .collab ul li img{
     width: 160px;
 }
+
+
+
+
+
+/* ----------------Mobile----------------- */
+
+@media (max-width: 739px){
+    .contact-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .receive-info{
+        margin-left: -2px;
+        margin-bottom: 36px;
+    }
+    .receive-info textarea{
+        height: 120px;
+    }
+    .collab ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .collab ul li{
+        width: 240px;
+    }
+}

@@ -9,55 +9,116 @@
     <link rel="stylesheet" href="/stylecommon.css">
     <link rel="icon" href="/imgs/icon.png">
     <link rel="stylesheet" href="/fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="/home/responsive.css">
 </head>
 <body>
 <!-- head -->
-    <div class="header">
-        <div class="info">
-            <div class="tele-number_info">
-                <i class="fas fa-phone-alt"></i>
-                <p>HỖ TRỢ MIỄN PHÍ: 0909.303.128</p>
+<div class="header">
+    <div class="info">
+        <div class="tele-number_info">
+            <i class="fas fa-phone-alt"></i>
+            <p>HỖ TRỢ MIỄN PHÍ: 0909.303.128</p>
+        </div>
+        <div class="box">
+            <input type="checkbox" id="check">
+            <div class="search-box">
+                <input type="text" placeholder="Tìm kiếm ...">
+                <label for="check" class="icon">
+                    <i class="fas fa-search"></i>
+                </label>
             </div>
-            <div class="detail_info">
+        </div>
+        <div class="detail_info">
+            <ul>
+                <li class="header-user">
+                    <i class="fas fa-user"></i>
+                    <a href="" class="account">TÀI KHOẢN</a>
+                    <i class="fas fa-chevron-down"></i>
+                        <ul class="header-user-menu">
+                            <li style="margin: 0; padding-left: 20px" class="header-user-item">
+                                <a href="">Tài khoản của tôi</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="header-user-item">
+                                <a href="">Đăng ký</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="header-user-item">
+                                <a href="">Đăng nhập</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="header-user-item">
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="">GIỚI THIỆU</a>
+                </li>
+                <li>
+                    <a href="">LIÊN HỆ</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="menu-logo">
+        <div class="part-left">
+            <div class="logo">
+                <img src="/imgs/logo.png" alt="">
+            </div>
+            <div class="menu">
                 <ul>
-                    <li>
-                        <i class="fas fa-user"></i>
-                        <a href="">TÀI KHOẢN</a>
-                        <i class="fas fa-chevron-down"></i>
+                    <li><a href="">TRANG CHỦ</a></li>
+                    <li class="product-category"><a href="">DANH MỤC SẢN PHẨM</a>
+                        <ul class="product-menu">
+                            <li style="margin: 0; padding-left: 20px" class="product-item">
+                                <a href="">Combo Nến Thơm</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="product-item">
+                                <a href="">Phụ kiện Nến</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="product-item">
+                                <a href="">Nến thơm</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="product-item">
+                                <a href="">Sáp thơm</a>
+                            </li>
+                            <li style="margin: 0; padding-left: 20px" class="product-item">
+                                <a href="">Khuếch tán tinh dầu</a>
+                            </li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="">GIỚI THIỆU</a>
-                    </li>
-                    <li>
-                        <a href="">LIÊN HỆ</a>
-                    </li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">GÓC CHIA SẺ</a></li>
+                    <li><a href="">VỀ CHÚNG TÔI</a></li>
+                    <li><a href="">LIÊN HỆ</a></li>
                 </ul>
             </div>
         </div>
-        <hr>
-        <div class="menu">
-            <div class="part-left">
-                <div class="logo">
-                    <img src="/imgs/logo.png" alt="">
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li><a href="">TRANG CHỦ</a></li>
-                        <li><a href="">DANH MỤC SẢN PHẨM</a></li>
-                        <li><a href="">BLOG</a></li>
-                        <li><a href="">GÓC CHIA SẺ</a></li>
-                        <li><a href="">VỀ CHÚNG TÔI</a></li>
-                        <li><a href="">LIÊN HỆ</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="part-right">
-                <i class="fas fa-search"></i>
+        <div class="part-right">
+            <div class="cart">
                 <i class="far fa-heart"></i>
                 <i class="fas fa-shopping-cart"></i>
             </div>
         </div>
+       
     </div>
+    <div class="menu-mobile">
+        <div class="bar">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="search-mobile">
+            <div class="search-box-mobile">
+                <input type="text" placeholder="Tìm kiếm ...">
+                <label for="check" class="icon-mobile">
+                    <i class="fas fa-search"></i>
+                </label>
+            </div>
+        </div>
+        <div class="cart-heart">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-shopping-cart"></i>
+        </div>
+    </div>
+</div>
 <!-- main -->
 <div class="main">
     <div class="contact-detail grid">
