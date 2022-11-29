@@ -1,0 +1,141 @@
+.body
+{
+    font-family:'Montserrat', sans-serif;
+
+}
+.TRANGCHUBlog
+{
+ background-color: #006D5A;
+ height:70px;
+ padding-top: 50px;
+}
+.TRANGCHUBlogchildren
+{
+    padding-left: 100px;
+}
+.TRANGCHU
+{
+color: aliceblue;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+padding: 50px;
+
+}
+.TRANGCHUtitle
+{padding-left: 50px;}
+.Blog
+{
+    color:aliceblue;
+}
+.divleftright
+{
+    width: 100%;
+    width: 1850px;
+    display: flex;
+    
+}
+.divleft
+{
+    width: 300px;
+    padding-left: 100px;
+   
+}
+.divright 
+{
+    width: 300px;
+   
+    padding-left: 200px;
+    
+  
+   
+}
+.divmiddle
+{
+    width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+.boxtimkiem
+{
+    border: 2px solid black;
+    border-radius: 24px;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    padding-left: 500px;
+    position: relative;
+    box-shadow: 0 0 0 1px rgba(1, 17, 12, 0.126),0 2px 4px 1px rgba(0,0,0,.09);
+    border-left: 1px solid transparent;
+    border-right: none;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-collapse: collapse;
+    border-spacing: 0;
+    list-style: none; 
+   margin-left: 450px;
+
+}
+.listnoidung
+{
+    color: #004D40;
+    padding-left: 5px;
+}
+.listnoidung1
+{
+    color: black;
+    padding-left: 5px;
+    font-size: 15px;
+}
+.img
+{
+    width: 500px;
+    height: 300px;
+    padding-left: 100px;
+}
+.ten 
+{
+    padding-left: 10px;
+}
+.đaiienten
+{
+    display: flex;
+    padding-left: 100px;
+}
+.imganhdaidien
+{
+
+    width: 40px;
+    height: 40px;
+    background: #999;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+
+   
+}
+.đaiienten1
+{
+    display: flex;
+    padding-left: px;
+}
+.react
+{
+    padding-left: 100px;
+}
+.imgact
+{
+    padding-left: 15px;
+}
+.imgact1
+{
+    padding-left: 330px;
+}
+.stt
+{
+    padding-left: 100px;
+}
+.gach
+{
+    display: none;
+}

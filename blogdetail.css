@@ -1,0 +1,147 @@
+
+.body
+{
+    font-family:'Montserrat', sans-serif;
+
+}
+.TRANGCHUBlog
+{
+ background-color: #006D5A;
+ height:70px;
+ padding-top: 50px;
+}
+.TRANGCHUBlogchildren
+{
+    padding-left: 100px;
+}
+.TRANGCHU
+{
+color: aliceblue;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+padding: 50px;
+
+}
+.TRANGCHUtitle
+{padding-left: 50px;}
+.Blog
+{
+    color:aliceblue;
+}
+.divleftright
+{
+    width: 1900px;
+    display: flex;
+    width:100%;
+    
+}
+.divleft1
+{
+    width:70%;
+  
+  
+}
+.divright 
+{
+   
+    width: 30%;
+   
+}
+.huongdan
+{
+color: #006D5A;
+font-size: 20px;
+font-family: 'Montserrat', sans-serif;
+padding-top:30px;
+padding-left: 50px;
+width: 600px;
+}
+.anhvanoidungblog
+{
+    width: 100%;
+    display: flex;
+    width: 900px;
+    height: 175px;
+  
+}
+.anhblog1
+{   width: 30%;
+    height: 50px;
+    width: 30px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.noidungblogtitle
+{
+color: #006D5A;
+padding-left: 10px;
+font-size: 20px;
+width: 500px;
+height: 48px;
+}
+.noidungblog
+{
+width: 600px;
+padding-top:20px ;
+height: 300px;
+
+}
+.ngaydang
+{
+    color: black;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.cachlam
+{
+    color: black;
+    padding-left: 10px;
+}
+.anhvanoidungblog1
+{
+    width: 100%;
+    display: flex;
+    width: 900px;
+    height: 175px;
+    
+
+  
+}
+.anhvanoidungblog2
+{
+    width: 100%;
+    display: flex;
+    width: 350px;
+    height: 125px;
+    font-size: 20px;
+    
+    
+
+  
+}
+.noidungblog2
+{
+width: 400px;
+padding-top:10px ;
+height: 300px;
+
+}
+.noidungblog2
+{
+width: auto;
+padding-top:10px ;
+height: auto;
+padding-left: 20px;
+
+}
+.content
+{
+    padding-left: 50px;
+    font-size: 15px;
+   
+}

@@ -1,0 +1,64 @@
+@media (max-width: 739px){
+    html{
+        overflow-x: hidden;
+    }
+    :root{
+        --main-color: rgb(0, 77, 64);
+        --sub-color: rgb(0, 137, 114);
+        --white-color: #fff;
+        --text-color: #000;
+    }
+    .header{
+    height: 120px;
+}
+.header .info{
+    display: none;
+}
+hr{
+    display: none;
+}
+.divleft
+{
+    width: 400px;
+    margin: 0px;
+    display: block;
+    display: inline;
+}
+.anhvanoidungblog
+{
+    width: 600px;
+    margin: 0px;
+  
+    display: inline;
+}
+.anhvanoidungblog1
+{
+    width: 500px;
+    margin: 0px;
+    display: inline;
+ 
+}
+.noidungblog 
+{   
+    display: inline;
+    margin: 0;
+}
+.anhblog 
+{
+
+    margin: 0;
+ 
+}
+
+.huongdan
+{
+  margin-right: 900px;
+  width: 400px;
+  display: none;
+
+}
+.divright
+{
+    display: none;
+}
+}
