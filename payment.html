@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment - NhuY</title>
+    <link rel="stylesheet" href="/NhuY-main/payment.css" />
+    <link rel="stylesheet" href="/NhuY-main/stylecommon.css" />
+    <link rel="icon" href="/imgs/icon.png" />
+    <link
+      rel="stylesheet"
+      href="/fonts/fontawesome-free-6.1.1-web/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- head -->
+    <div class="header">
+      <div class="info">
+        <div class="tele-number_info">
+          <i class="fas fa-phone-alt"></i>
+          <p>HỖ TRỢ MIỄN PHÍ: 0909.303.128</p>
+        </div>
+        <div class="detail_info">
+          <ul>
+            <li>
+              <i class="fas fa-user"></i>
+              <a href="">TÀI KHOẢN</a>
+              <i class="fas fa-chevron-down"></i>
+            </li>
+            <li>
+              <a href="">GIỚI THIỆU</a>
+            </li>
+            <li>
+              <a href="">LIÊN HỆ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="menu">
+        <div class="part-left">
+          <div class="logo">
+            <img src="/imgs/logo.png" alt="" />
+          </div>
+          <div class="menu">
+            <ul>
+              <li><a href="">TRANG CHỦ</a></li>
+              <li><a href="">DANH MỤC SẢN PHẨM</a></li>
+              <li><a href="">BLOG</a></li>
+              <li><a href="">GÓC CHIA SẺ</a></li>
+              <li><a href="">VỀ CHÚNG TÔI</a></li>
+              <li><a href="">LIÊN HỆ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="part-right">
+          <i class="fas fa-search"></i>
+          <i class="far fa-heart"></i>
+          <i class="fas fa-shopping-cart"></i>
+        </div>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+      <div class="main-header">
+        <h3>TRANG CHỦ/<i>THANH TOÁN </i></h3>
+      </div>
+      <div class="main-content">
+        <div class="main-left">
+          <div class="main-left-title"><h3>THÔNG TIN GIAO HÀNG</h3></div>
+
+          <div class="welcome">
+            <p>
+              Xin chào Giang, bạn vui lòng điền đẩy đủ thông tin để NHU Y gửi
+              hàng đến bạn nhanh nhất nhé
+            </p>
+          </div>
+          <section>
+            <article>
+              <div>
+                <label for="name"></label>
+                <input
+                  type="text"
+                  id="firstname"
+                  placeholder="Họ và Tên"
+                  pattern="[A,Z],[a,z]"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone"></label>
+                <input
+                  type="text"
+                  id="phone"
+                  placeholder="Số điện thoại"
+                  required
+                />
+              </div>
+              <div>
+                <label for="address"></label>
+                <input
+                  type="text"
+                  id="address"
+                  placeholder="Địa chỉ"
+                  required
+                />
+              </div>
+              <div class="local">
+                <select
+                  class="form-select form-select-sm mb-3"
+                  id="city"
+                  aria-label=".form-select-sm"
+                >
+                  <option value="" selected>Tỉnh/Thành</option>
+                </select>
+
+                <select
+                  class="form-select form-select-sm mb-3"
+                  id="district"
+                  aria-label=".form-select-sm"
+                >
+                  <option value="" selected>Quận/Huyện</option>
+                </select>
+
+                <select
+                  class="form-select form-select-sm"
+                  id="ward"
+                  aria-label=".form-select-sm"
+                >
+                  <option value="" selected>Phường/xã</option>
+                </select>
+              </div>
+            </article>
+          </section>
+
+          <div class="way">
+            <div clas="delivery">
+              <b>Phương thức vận chuyển</b><br />
+              <div class="input">
+                <input type="radio" /> Giao hàng tiêu chuẩn 30.000 đ<br />
+                <input type="radio" /> Giao hàng nhanh trong 2h (HCM) 45.000 đ
+              </div>
+            </div>
+            <div class="payment">
+              <b>Phương thức thanh toán</b><br />
+
+              <div class="input">
+                <input type="radio" />
+                <img src="/NhuY-main/imgs/icons8-bank-cards-50.png" />Chuyển
+                khoản qua ngân hàng<br />
+                <input type="radio" />
+                <img
+                  src="/NhuY-main/imgs/external-Cod-delivery-outline-berkahicon.png"
+                />Thanh toán khi nhận hàng
+              </div>
+            </div>
+            <div class="button">
+              <button>THANH TOÁN</button>
+            </div>
+          </div>
+        </div>
+        <div class="main-right">
+          <h3>THÔNG TIN ĐƠN HÀNG</h3>
+          <table class="product-table">
+            <thead>
+              <tr>
+                <th scope="col">
+                  <span class="visually-hidden">Hình ảnh</span>
+                </th>
+                <th scope="col"><span class="visually-hidden">Mô tả</span></th>
+                <th scope="col">
+                  <span class="visually-hidden">Số lượng</span>
+                </th>
+                <th scope="col"><span class="visually-hidden">Giá</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="product">
+                <td class="product-image">
+                  <div class="product-thumbnail">
+                    <div class="product-thumbnail-wrapper">
+                      <img
+                        class="product-thumbnail-image"
+                        alt="Spooky Scentss"
+                        src="/NhuY-main/imgs/Spooky Scents.jpg"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td class="product-description">
+                  <span class="product-description-name order-summary-emphasis"
+                    >Spooky Scentss</span
+                  >
+                </td>
+                <td class="product-quantity visually-hidden">1</td>
+                <td class="product-price">
+                  <span class="order-summary-emphasis">175,000₫</span>
+                </td>
+              </tr>
+              <tr class="product">
+                <td class="product-image">
+                  <div class="product-thumbnail">
+                    <div class="product-thumbnail-wrapper">
+                      <img
+                        class="product-thumbnail-image"
+                        alt="NẾN THƠM MÙA NOEL - TENDANCES"
+                        src="/NhuY-main/imgs/Tendances déco 2021 - Bougie et fleurs séchées.jpg"
+                      />
+                    </div>
+                  </div>
+                </td>
+                <td class="product-description">
+                  <span class="product-description-name order-summary-emphasis"
+                    >Up to cloud</span
+                  >
+                </td>
+                <td class="product-quantity visually-hidden">2</td>
+                <td class="product-price">
+                  <span class="order-summary-emphasis">325.000₫</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <hr />
+          <div class="total">
+            <p>Tạm tính: 500.000 đ</p>
+            <p>Phí vận chuyển: 30.000 đ</p>
+            <p><b>Thanh toán:</b> 530.000 đ</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Chọn 63 tỉnh thành -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <script>
+      var citis = document.getElementById("city");
+      var districts = document.getElementById("district");
+      var wards = document.getElementById("ward");
+      var Parameter = {
+        url: "https://raw.githubusercontent.com/kenzouno1/DiaGioiHanhChinhVN/master/data.json",
+        method: "GET",
+        responseType: "application/json",
+      };
+      var promise = axios(Parameter);
+      promise.then(function (result) {
+        renderCity(result.data);
+      });
+
+      function renderCity(data) {
+        for (const x of data) {
+          citis.options[citis.options.length] = new Option(x.Name, x.Id);
+        }
+        citis.onchange = function () {
+          district.length = 1;
+          ward.length = 1;
+          if (this.value != "") {
+            const result = data.filter((n) => n.Id === this.value);
+
+            for (const k of result[0].Districts) {
+              district.options[district.options.length] = new Option(
+                k.Name,
+                k.Id
+              );
+            }
+          }
+        };
+        district.onchange = function () {
+          ward.length = 1;
+          const dataCity = data.filter((n) => n.Id === citis.value);
+          if (this.value != "") {
+            const dataWards = dataCity[0].Districts.filter(
+              (n) => n.Id === this.value
+            )[0].Wards;
+
+            for (const w of dataWards) {
+              wards.options[wards.options.length] = new Option(w.Name, w.Id);
+            }
+          }
+        };
+      }
+    </script>
+    <!-- footer  -->
+    <!-- <div class="footer">
+      <div class="footer-container">
+        <div class="intro">
+          <div class="logo">
+            <img src="/imgs/logo1.png" alt="" />
+          </div>
+          <div class="intro-content">
+            <p>
+              Như Ý định vị là thương hiệu cung cấp: Nguyên liệu làm nến thơm
+              cao cấp, tinh dầu thơm phối hương và nến thơm
+            </p>
+          </div>
+          <div class="certify">
+            <img src="/imgs/certify.png" alt="" />
+          </div>
+        </div>
+        <div class="about-us">
+          <h4 class="title-footer">Về chúng tôi</h4>
+          <ul>
+            <li>Chính sách bảo mật</li>
+            <li>Điều khoản và chỉ định</li>
+            <li>Chứng nhận</li>
+          </ul>
+        </div>
+        <div class="help">
+          <h4 class="title-footer">Hỗ trợ khách hàng</h4>
+          <ul>
+            <li>Hướng dẫn mua hàng</li>
+            <li>Hướng dẫn thanh toán</li>
+            <li>Hướng dẫn đổi trả</li>          </ul>
+        </div>
+        <div class="contact">
+          <h4 class="title-footer">Liên hệ</h4>
+          <ul>
+            <li>Linh Xuân, Thủ Đức</li>
+            <li>Hotline: 0963326312</li>
+            <li>
+              <div class="contact-icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="far fa-envelope"></i>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1140690390284!2d106.77117981079151!3d10.878927889231433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d886e7107567%3A0xce012a21064099dd!2zMzAsIDEwIMSQxrDhu51uZyBT4buRIDEwLCBMaW5oIFh1w6JuLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1668239551640!5m2!1svi!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Copyright &copy; 2022 Nến thơm Như Ý by FiveG</p>
+      </div>
+    </div> -->
+  </body>
+</html>

@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+.html {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-detail .title {
+  padding-top: 16px;
+}
+.contact-container {
+  display: flex;
+}
+.contact-container .address p {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.receive-info {
+  margin-left: 240px;
+}
+.receive-info form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+textarea {
+  width: 480px;
+  margin-bottom: 12px;
+  outline: none;
+  border: 2px solid rgb(0, 77, 64);
+  border-radius: 4px;
+}
+form input {
+  height: 32px;
+}
+::placeholder {
+  color: #000;
+  padding: 4px 0 0 12px;
+  font-family: "Montserrat", sans-serif;
+}
+form button {
+  height: 36px;
+  color: #fff;
+  background: rgb(0, 77, 64);
+  border: none;
+  border-radius: 4px;
+}
+form button:hover {
+  color: rgb(0, 77, 64);
+  background: #fff;
+  border: 2px solid rgb(0, 77, 64);
+}
+
+.collab ul {
+  display: flex;
+  justify-content: space-between;
+}
+.collab ul li {
+  list-style: none;
+  text-align: center;
+}
+.collab ul li img {
+  width: 160px;
+}
+.main {
+  height: 400px;
+  display: block;
+}
+.main-header {
+  background-color: rgb(0, 77, 64);
+  height: 40px;
+}
+.main-header h3 {
+  color: white;
+  margin-left: 50px;
+  display: block;
+}
+.main-title {
+  text-align: center;
+  margin: 30px;
+  display: block;
+}
+.main h4 {
+  display: block;
+}
+.login {
+  width: 300px;
+  height: 40px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: absolute;
+  left: 35%;
+}
+.login button {
+  width: 300px;
+  height: 40px;
+  background-color: #fff;
+  outline: none;
+  font-weight: bold;
+  border: 1px solid rgb(219, 217, 217);
+  justify-content: center;
+  margin: 10px;
+}
+.login-box2 input {
+  position: relative;
+  width: 300px;
+  height: 30px;
+  outline: none;
+  border: 1px solid rgb(219, 217, 217);
+  margin: 10px;
+  border-radius: 4px;
+}
+.login-box2 .next-btn {
+  background-color: #000;
+  color: #fff;
+  height: 40px;
+}
+.login h5,
+.login h6 {
+  margin: 10px;
+  text-align: center;
+}
+.register {
+  text-align: center;
+  margin: 10px;
+}

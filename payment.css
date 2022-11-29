@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+.html {
+  font-family: "Montserrat", sans-serif;
+}
+.contact-detail .title {
+  padding-top: 16px;
+}
+.contact-container {
+  display: flex;
+}
+.contact-container .address p {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.receive-info {
+  margin-left: 240px;
+}
+.receive-info form {
+  display: flex;
+  flex-direction: column;
+}
+form input,
+textarea {
+  width: 480px;
+  margin-bottom: 12px;
+  outline: none;
+  border: 2px solid rgb(0, 77, 64);
+  border-radius: 4px;
+}
+form input {
+  height: 32px;
+}
+::placeholder {
+  color: #000;
+  padding: 4px 0 0 12px;
+  font-family: "Montserrat", sans-serif;
+}
+form button {
+  height: 36px;
+  color: #fff;
+  background: rgb(0, 77, 64);
+  border: none;
+  border-radius: 4px;
+}
+form button:hover {
+  color: rgb(0, 77, 64);
+  background: #fff;
+  border: 2px solid rgb(0, 77, 64);
+}
+
+.collab ul {
+  display: flex;
+  justify-content: space-between;
+}
+.collab ul li {
+  list-style: none;
+  text-align: center;
+}
+.collab ul li img {
+  width: 160px;
+}
+.main-header {
+  background-color: rgb(0, 77, 64);
+  height: 40px;
+}
+.main-header h3 {
+  color: white;
+  margin-left: 50px;
+  display: block;
+}
+.main-content {
+  display: flex;
+}
+.main-left {
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+.welcome {
+  width: 480px;
+  margin: 0 auto;
+}
+.main-right h3 {
+  text-align: center;
+}
+section {
+  width: 80%;
+  margin: 10px auto;
+}
+article label {
+  margin-left: 20px;
+}
+article input {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 40px;
+  box-sizing: none;
+  background: white;
+  border: none;
+  font-size: medium;
+  border-bottom: 1px solid;
+}
+::placeholder {
+  color: darkgray;
+}
+article .checkbox {
+  margin-left: 0;
+  color: #000;
+}
+article .create {
+  margin: 40px 40px 15px 40px;
+  padding-bottom: 30px;
+}
+button {
+  background-color: rgb(54, 104, 64);
+  color: #fff;
+  width: 100px;
+  height: 20px;
+}
+.button {
+  text-align: center;
+}
+.local {
+  width: 100%;
+  display: flex;
+  margin-left: 20px;
+}
+.local select {
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 40px;
+  box-sizing: none;
+  background: white;
+  border: none;
+  font-size: medium;
+  border-bottom: 1px solid;
+}
+.delivery {
+  display: grid;
+}
+
+.way {
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+.way img {
+  width: 20px;
+  height: auto;
+}
+.way input {
+  margin-top: 10px;
+}
+.product-image img {
+  width: 50px;
+  height: auto;
+}
+.product {
+  text-align: center;
+}
+.total {
+  margin-left: 50px;
+  text-align: justify;
+}
+
+/* Mobie */
+
+@media (max-width: 739px) {
+  html {
+    overflow-x: hidden;
+  }
+  .main-content {
+    flex-direction: column-reverse;
+  }
+  .main-right {
+    margin-top: 20px;
+  }
+  .visually-hidden {
+    font-size: smaller;
+  }
+  .total {
+    margin-left: 80px;
+    text-align: justify;
+  }
+  .main-left-title {
+    width: 240px;
+    margin-left: 60px;
+  }
+  .welcome {
+    width: 300px;
+    text-align: justify;
+    margin-left: 40px;
+    font-size: smaller;
+  }
+  section {
+    width: 300px;
+  }
+  section input {
+    height: 8px;
+    font-size: 12px;
+  }
+  .way {
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .way b:hover {
+    color: rgb(73, 138, 120);
+  }
+  .input {
+    display: none;
+  }
+  .local {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+  }
+  .local select {
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    box-sizing: none;
+    background: white;
+    border: none;
+    font-size: 12px;
+    border-bottom: 1px solid;
+  }
+}
