@@ -1,0 +1,771 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chi tiết Nến thơm Agaya Jasmint</title>
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/detail/detail_responsive.css">
+<link rel="stylesheet" href="/styleCommon.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+/* .sao-san-pham-2{
+	color: #ff9900;
+} */
+
+.chosed-page {
+	height: 50px;
+  	background-color: #004D40;
+	padding: 15px;
+	color: white;
+}
+
+.gia-san-pham{
+	font-size: 24px;
+    color: #e80000;
+    font-weight: bold;
+    line-height: 35px;
+}
+
+.a-stock{
+	color: red;
+	font-weight: bold;
+}
+.themvaogiohang, .muangay{
+	padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+	background-color: #004D40;
+	margin: 15px 0px;
+	/* margin-left: 25%; */
+	/* margin-top: 15px; */
+	color: white;
+	font-size: 15px;
+	font-weight: bold;
+}
+.themvaogiohang:hover, .muangay:hover{
+	background-color: gray;
+	font-weight: bold;
+	color: white;
+}
+.san-pham-6{
+	width: 24%;
+	border: 1px solid #eaeaea;
+	float: left;
+	margin-left: 1%;
+	min-height: 260px;
+}
+.san-pham-6:hover{
+	border: 2px solid gray;
+}
+.sanpham-info{
+position: relative;
+overflow: auto;
+margin-top: 10px;
+min-height: 80px;
+overflow-y: auto;
+overflow-x: hidden;
+text-align: center;
+clear: both;
+}
+
+.rating-box i{
+	/* color:#F6EC09; */
+	cursor:pointer;
+	width:11px;
+}
+
+/* .review-box{
+	float: right;
+	text-align: right;
+	width: 50%;
+	color: #b3b3b3;
+	display: block;
+	font-size:12px;
+	line-height:14px;
+	font-family: 'Bitter', serif;
+	margin-top:3px;
+} */
+.price-box{
+	font-family: 'Oswald', sans-serif;
+}
+.price-box span.price{
+	color: #ff5858;
+	margin-right: 11px;
+	font-size:18px;
+	line-height:20px;
+	font-weight:700;
+	text-decoration:none;
+}
+.price-box span.old-price{
+	text-decoration: line-through;
+	color: #888;
+	font-size:13px;
+	line-height:17px;
+	margin-top: 3px;
+}
+.star_rating{
+	width: fit-content;
+	text-align: center;
+}
+
+.star_rating-point{
+	color: red;
+	font-size: x-large;
+	font-weight: bold;
+}
+
+
+.checked {
+  color: orange;
+}
+
+/* Danh gia */
+	* {
+  box-sizing: border-box;
+}
+
+/* Three column layout */
+.side {
+  float: left;
+  width: 15%;
+  margin-top:10px;
+}
+
+.middle {
+  margin-top:10px;
+  float: left;
+  width: 70%;
+}
+
+/* Place text to the right */
+.right {
+  text-align: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The bar container */
+.bar-container {
+  width: 100%;
+  background-color: #eeeeee;
+  text-align: center;
+  color: white;
+}
+
+/* Individual bars */
+.bar-5 {width: 95.4%; height: 18px; background-color: #F6EC09;}
+.bar-4 {width: 4.6%; height: 18px; background-color: #F6EC09;}
+.bar-3 {width: 0%; height: 18px; background-color: #F6EC09;}
+.bar-2 {width: 0%; height: 18px; background-color: #F6EC09;}
+.bar-1 {width: 0%; height: 18px; background-color: #F6EC09;}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 200px; /* only for demonstration, should be removed */
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 200px /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buyer{
+	width: 5%;
+}
+
+.box1{
+    width:100px;
+    height: 32px;
+    background-color: #004D40;
+	padding: 5px;
+	color: white;
+}
+/* Responsive layout - make the columns stack on top of each other instead of next to each other */
+/* @media (max-width: 400px) {
+  .side, .middle {
+    width: 100%;
+  }
+  .right {
+    display: none;
+  }
+} */
+
+.header{
+	position: fixed;
+	z-index: 999;
+
+}
+
+.menu .logo{
+    margin-top: -40px;
+}
+
+.prev{
+	border:2px solid black;
+	float: left;
+	width:27px;
+	text-align: center;
+	margin-left: 10%;
+}
+.prev:hover,.next:hover{
+	border:2px solid red;
+
+}
+
+.next{
+	float: left;
+	border:2px solid black;
+	width:27px;
+	text-align: center;
+	margin-left: 10%;
+}
+	</style>
+
+</head>
+
+<body>	
+<!-- header -->
+    <div class="header">
+        <div class="info">
+            <div class="tele-number_info">
+                <i class="fas fa-phone-alt"></i>
+                <p>HỖ TRỢ MIỄN PHÍ: 0909.303.128</p>
+            </div>
+            <div class="detail_info">
+                <ul>
+                    <li>
+                        <i class="fas fa-user"></i>
+                        <a href="">TÀI KHOẢN</a>
+                        <i class="fas fa-chevron-down"></i>
+                    </li>
+                    <li>
+                        <a href="">GIỚI THIỆU</a>
+                    </li>
+                    <li>
+                        <a href="">LIÊN HỆ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="menu">
+            <div class="part-left">
+                <div class="logo">
+                    <img src="/Images/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="">TRANG CHỦ</a></li>
+                        <li><a href="">DANH MỤC SẢN PHẨM</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">GÓC CHIA SẺ</a></li>
+                        <li><a href="">VỀ CHÚNG TÔI</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="part-right">
+                <i class="fas fa-search"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </div>
+<!-- main -->
+<div class="main">
+	<div class="container">
+		<div class="col-lg-12">
+			<div class="row">
+				<div class="chosed-page" style="margin-top:15px;">
+						<a href="#" style="color: rgb(212, 250, 233)">
+								Trang chủ  
+							</a>
+							<span>&nbsp;</span>
+							<i class="fa fa-angle-right">
+							</i>
+							<span>&nbsp;</span>
+							<span style="color: rgb(130, 254, 206);">
+								Nến thơm Agaya Jasmint
+							</span>
+				</div>
+				
+			</div>
+			<hr />
+			<div class="row">
+			
+				<div class="col-lg-12">
+					<div class="row">
+						<div class="col-lg-6">
+						<div class="img-chitietsanpham"	>
+							<img style="width:100%;" src="./Images/nen-thom-agaya-jasmint.jpg" />
+						</div>
+						</div>
+						<div class="col-lg-6">
+							<h1 class="chitiet-tensanpham">Nến thơm Agaya Jasmint</h1>
+							
+							<p>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star-half-o checked"></i>
+							</p>
+							<p class="gia-san-pham">115.000 đ</p>
+							<p><strong>Tình trạng:</strong><span class="a-stock">Còn hàng</span></p>
+							
+							<div style="width:100%">
+								<div style="width:40%;float:left;">
+									<h5 style="margin-top:0px;">Số lượng</h3>
+								</div>
+								<div style="width:60%;float:left;">
+									<button class="btn-soluong">-</button>
+									<input style="width:25px;height: 25px;" type="number" value="1">
+									<button class="btn-soluong">+</button>
+								</div>
+							</div>
+							
+							<button class="themvaogiohang"><i class="fa fa-shopping-cart"></i>
+								Thêm vào giỏ hàng
+							</button>
+							<button class="muangay">Mua ngay</button>
+						</div>
+					</div>
+					<hr />
+					<div class="row">
+						<div class="tab">
+							<button class="tablinks" onclick="openTab(event, 'Mota')">Mô tả</button>
+							<button class="tablinks" onclick="openTab(event, 'Danhgia')">Đánh giá(65)</button>
+						</div>
+						<div id="Mota" class="tabcontent">
+							<h4>Nến thơm Agaya Jasmint</h4>
+							<p>Đắm chìm vào không gian của Jasmint, bạn sẽ cảm nhận được sự kết hợp hoàn hảo giữa vị lành lạnh của bạc hà trên nền hương nhài trong trẻo và thanh khiết. Jasmint – nó tựa như mùi vị của cốc trà đá leng keng, buốt tay giữa ngày hè đổ lửa vậy. Đang nóng bực cả mình thì bỗng dưng mát lòng mát dạ.</p>
+							<h4><ul>Hướng dẫn sử dụng nến thơm:</h4>
+								<li>Trước khi thắp nến: Loại bỏ các dị vật rơi vào bề mặt nến (nếu có) và cắt ngắn bấc nến còn khoản 0,5-0,6cm giúp ngọn lửa cháy đều và ổn định</li>
+								<li>Trong khi thắp nến: Phần nến bề mặt sẽ tan chảy và toả hương thơm. Cần thắp nến ít nhất 1 giờ hoặc thắp đến khi sáp trên bề mặt nến tan chảy hoàn toàn giúp hương thơm được giải phóng tối đa và không để lại vòng sáp gây tắt nến và lãng phí.</li>
+								<li>Lưu ý: không nên đốt nến quá 4 giờ, ngọn lửa lớn, không ổn định và tránh lãng phí (nến của bạn vẫn sẽ tiếp tục lưu hương từ 1-2 giờ sau khi tắt)</li>
+							</ul>
+							<h4><ul>An toàn khi đốt nến:</h4>
+								<li>Đặt cốc nến trên bề mặt chịu nhiệt và bằng phẳng</li>
+								<li>Để xa tầm tay của trẻ nhỏ và thú nuôi</li>
+								<li>Không đốt nến khi không có người quan sát</li>
+								<li>Tránh những vật thể dễ cháy và những thơi có luồng không khí mạnh (quạt, cửa sổ…).</li>
+								<li>Để nến nơi bạn có thể quan sát được.</li>
+							</ul>
+						</div>
+						
+						<div id="Danhgia" class="tabcontent">
+						<section>
+							<nav>
+								<div class="star_rating">
+									<p class="star_rating-point">4.8 /5</p>
+										<i class="fa fa-star checked"></i>
+										<i class="fa fa-star checked"></i>
+										<i class="fa fa-star checked"></i>
+										<i class="fa fa-star checked"></i>
+										<i class="fa fa-star-half-empty checked"></i>
+									<div>Dựa trên 65 đánh giá</div>
+								</div>
+																	  
+							</nav>
+									
+							<article>
+									<div class="side">
+										<div>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+										</div>
+									</div>
+									<div class="middle">
+										<div class="bar-container">
+											<div class="bar-5"></div>
+										</div>
+									</div>
+									<div class="side right">
+										<div>95.4%<span style="margin-left: 40%">(62)</span></div>
+									</div>
+									<div class="side">
+										<div>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+										</div>
+									</div>
+									<div class="middle">
+										<div class="bar-container">
+											<div class="bar-4"></div>
+										</div>
+									</div>
+									<div class="side right">
+										<div>4.6%<span style="margin-left: 48%">(3)</span></div>
+									</div>
+									<div class="side">
+										<div>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+										</div>
+									</div>
+									<div class="middle">
+										<div class="bar-container">
+											<div class="bar-3">
+											</div>
+										</div>
+									</div>
+									<div class="side right">
+										<div>0.0%<span style="margin-left: 48%">(0)</span></div>
+									</div>
+									<div class="side">
+										<div>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+										</div>
+									</div>
+									<div class="middle">
+										<div class="bar-container">
+											<div class="bar-2"></div>
+										</div>
+									</div>
+									<div class="side right">
+										<div>0.0%<span style="margin-left: 48%">(0)</span></div>
+									</div>
+									<div class="side">
+										<div>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+											<i class="fa fa-star" style="color:#a3a39e"></i>
+										</div>
+									</div>
+									<div class="middle">
+										<div class="bar-container">
+											<div class="bar-1"></div>
+										</div>
+									</div>
+									<div class="side right">
+										<div>0.0%<span style="margin-left: 48%">(0)</span></div>
+									</div>
+									
+								
+							</article>
+							
+						</section>
+					
+						<hr>
+						<table>
+							<th rowspan="2">
+								<img width="50px" src="/detail/Images/user1.jpg">
+							</th>
+							<td>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<p class="box1">Đã mua hàng</p>
+							</td>
+						  </tr>
+						</table>
+						<p>Chất lượng lắm luôn á , giao hàng nhanh , shop tư vấn nhiệt tình lắm nha</p>
+						<img src="/detail/Images/nen-thom-agaya-jasmint-5.jpg" width="150px">
+						<hr>
+						<table>
+							<th rowspan="2">
+								<img width="50px" src="/detail/Images/user1.jpg">
+							</th>
+							<td>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+								<i class="fa fa-star checked"></i>
+							</td>
+						  </tr>
+						  <tr>
+							<td>
+								<p class="box1">Đã mua hàng</p>
+							</td>
+						  </tr>
+						</table>
+						<p>Giao hành nhanh, gói hàng khá kĩ cũng dễ mở, hộp hàng bé bé vậy thôi mà do shop xếp đồ gọn đó. Hướng dẫn làm nến kĩ càng đủ bước, đồ đặt giao đủ. Sáp nến thơm, làm được nhiều nến tealight hơn mình tưởng. Còn được tặng sample mùi mê cực í</p>
+						<img src="/detail/Images/nen-thom-agaya-jasmint-3.png" width="150px">
+						<hr>
+						
+						
+										 
+						<script>
+							function openTab(evt, tabName) {
+							  var i, tabcontent, tablinks;
+							  tabcontent = document.getElementsByClassName("tabcontent");
+							  for (i = 0; i < tabcontent.length; i++) {
+								tabcontent[i].style.display = "none";
+							  }
+							  tablinks = document.getElementsByClassName("tablinks");
+							  for (i = 0; i < tablinks.length; i++) {
+								tablinks[i].className = tablinks[i].className.replace(" active", "");
+							  }
+							  document.getElementById(tabName).style.display = "block";
+							  evt.currentTarget.className += " active";
+							}
+						</script>						
+					</div>
+					<div class="row">
+						<div class="col-sm-10">
+								<h2 class="title">SẢN PHẨM TƯƠNG TỰ</p>
+						</div>
+						<div class="col-sm-2" style="margin-top:3.5%;">
+							<div class="prev" style="margin-left:40%;">
+								<i class="fa fa-angle-left"></i>
+							</div>
+							<div class="next">
+									<i class="fa fa-angle-right"></i>
+							</div>
+						</div>
+					</div>
+						
+					<!-- SAN PHAM CUNG LOAI -->
+					<div class="row">
+						<div class="san-pham-6">
+							<a class="title" href="index2.html" style="text-decoration:none;">
+								<img src="./Images/nen-thom-agaya-date.jpg" style="height: 70%;width: 100%;" />
+								<div class="sanpham-info">
+									<div class="row">
+										<div>
+											<a href="single-product.html">Nến thơm Agaya Date</a>
+										</div>
+										<div class="rating-box">
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star checked"></i>
+												<i class="fa fa-star-half-empty checked"></i>
+										</div>
+											
+										<div class="price-box">
+											<span class="old-price">160.000 đ</span>
+											<span class="price">120.000 đ</span>
+										</div>
+									</div>
+										
+								</div>
+							</a>	
+						</div>
+						
+						<div class="san-pham-6">
+							<a class="title" href="index2.html" style="text-decoration:none;">
+								<img src="./Images/nen-thom-agaya-teakwood.jpg" style="height: 70%;width: 100%;" />
+								<div class="sanpham-info">
+									<div class="row">
+										<div>
+											<a href="single-product.html">Nến thơm Agaya Teakwood</a>
+										</div>
+										<div class="rating-box">
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star-half-empty checked"></i>
+										</div>
+											
+										<div class="price-box">
+											<span class="old-price">160.000 đ</span>
+											<span class="price">120.000 đ</span>
+										</div>
+									</div>
+										
+								</div>
+							</a>	
+						</div>
+						<div class="san-pham-6">
+							<a class="title" href="index2.html" style="text-decoration:none;">
+								<img src="./Images/nen-thom-agaya-goodnight.jpg" style="height: 70%;width: 100%;" />
+								<div class="sanpham-info">
+									<div class="row">
+										<div>
+											<a href="single-product.html">Nến thơm Agaya Goodnight</a>
+										</div>
+										<div class="rating-box">
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star-half-empty checked"></i>
+										</div>
+											
+										<div class="price-box">
+											<span class="old-price">160.000 đ</span>
+											<span class="price">120.000 đ</span>
+										</div>
+									</div>
+										
+								</div>
+							</a>	
+						</div>
+						<div class="san-pham-6">
+							<a class="title" href="index2.html" style="text-decoration:none;">
+								<img src="./Images/nen-thom-agaya-daisy.jpg" style="height: 70%;width: 100%;" />
+								<div class="sanpham-info">
+									<div class="row">
+										<div>
+											<a href="single-product.html">Nến thơm Agaya Daisy</a>
+										</div>
+										<div class="rating-box">
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star checked"></i>
+											<i class="fa fa-star-half-empty checked"></i>
+										</div>
+											
+										<div class="price-box">
+											<span class="old-price">160.000 đ</span>
+											<span class="price">120.000 đ</span>
+										</div>
+									</div>
+										
+								</div>
+							</a>	
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- footer  -->
+<div class="footer">
+	<div class="footer-container">
+		<div class="intro">
+			<div class="logo">
+				<img src="/Images/logo1.png" alt="">
+			</div>
+			<div class="intro-content">
+				<p>Như Ý định vị là thương hiệu cung cấp: Nguyên liệu làm nến thơm cao cấp, tinh dầu thơm phối hương và nến thơm</p>
+			</div>
+			<div class="certify">
+				<img src="/Images/certify.png" alt="">
+			</div>
+		</div>
+		<div class="about-us">
+			<h4 class="title-footer">
+				Về chúng tôi
+			</h4>
+			<ul>
+				<li>Chính sách bảo mật</li>
+				<li>Điều khoản và chỉ định</li>
+				<li>Chứng nhận</li>
+			</ul>
+		</div>
+		<div class="help">
+			<h4 class="title-footer">
+				Hỗ trợ khách hàng
+			</h4>
+			<ul>
+				<li>Hướng dẫn mua hàng</li>
+				<li>Hướng dẫn thanh toán</li>
+				<li>Hướng dẫn đổi trả</li>
+			</ul>
+		</div>
+		<div class="contact">
+			<h4 class="title-footer">
+				Liên hệ
+			</h4>
+			<ul>
+				<li>Linh Xuân, Thủ Đức</li>
+				<li>Hotline: 0963326312</li>
+				<li>
+					<div class="contact-icon">
+						<i class="fab fa-facebook-f"></i>
+						<i class="fab fa-youtube"></i>
+						<i class="fab fa-instagram"></i>
+						<i class="far fa-envelope"></i>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.1140690390284!2d106.77117981079151!3d10.878927889231433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d886e7107567%3A0xce012a21064099dd!2zMzAsIDEwIMSQxrDhu51uZyBT4buRIDEwLCBMaW5oIFh1w6JuLCBUaOG7pyDEkOG7qWMsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1668239551640!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<hr>
+	<div class="copyright">
+		<p>Copyright &copy; 2022 Nến thơm Như Ý by FiveG</p>
+	</div>
+</div>
+	</div>
+	</body>
