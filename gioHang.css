@@ -1,0 +1,113 @@
+.main_head{
+    background-color: rgb(0, 77, 64);
+    color: white;
+    height: 50px;
+    vertical-align: middle;
+}
+.table{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.table1{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row_2{
+    background-color:rgb(114, 197, 197);
+    height: 30px;
+    }
+.row1{
+    background-color:rgb(114, 197, 197);
+    height: 30px;
+}
+.colum1{
+    width: 30%;
+}
+.colum2{
+    width:15%;
+}
+.colum3{
+    width:15%;
+}
+.colum4{
+    width:15%;
+}
+.colum5{
+    width:5%;
+}
+.table1_1{
+    background-color:grey;
+}
+.colum2_1{
+    width: 15%;
+}
+.colum2_2{
+    width: 15%;
+}
+.colum2_3{
+    width: 15%;
+}
+.colum2_4{
+    width: 15%;
+}
+.colum2_5{
+    width: 15%;
+}
+.colum2_6{
+    width: 5%;
+}
+.content_3{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    background-color: rgb(114, 197, 197);
+}
+.table_3{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.colum3_1{
+    width:30%;
+}
+.colum3_2{
+    width:40%;
+}
+.colum3_3{
+    width:30%;
+}
+.table_4{
+    margin-left:auto;
+    margin-right: auto;
+}
+.content_4{
+    margin-top: 15px;
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+}
+.table_5{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    color: white; 
+}
+.table_5 td{
+    background: rgb(0, 77, 64);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.table_5 .line{
+    height: 100px;
+    width: 10px;
+    background: #fff;
+}
+table.table1, th{
+    border: 1px solid rgb(114, 197, 197);
+    border-collapse: collapse;
+}
+.range-product input{
+    width: 30px;
+}

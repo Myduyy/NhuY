@@ -1,0 +1,125 @@
+.main_head{
+    width:100%;
+} 
+.content_left{
+    position:fixed;
+    left: 0%;
+    width:10%;
+    float: left;
+    margin-top: 15%;
+}
+.main_head{
+    background-color: rgb(0, 64, 77);
+    margin-top: 13%;
+    left:0%;
+    color: white;
+}
+.content_right_top{
+    background-color:gray;
+    top: 20%;
+    left: 15%;
+    float: right;
+    width: 80%;
+    display:flex;
+    margin: 30px;
+    padding: 10px;
+
+}
+.content_right_bot{
+    float: right;
+    width: 80%;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+.content_right{
+    width:100%;
+}
+.content_right_top_2{
+    background-color: white;
+    width:16%;
+    margin-left: 5px;
+}
+.content_right_top_3{
+    background-color: red;
+    color: white;
+    width:16%;
+    margin-left: 5px;
+}
+.content_right_top_4{
+    background-color: white;
+    width:16%;
+    margin-left: 5px;
+}
+.content_right_top_5{
+    background-color: white;
+    width:16%;
+    margin-left: 5px;
+}
+.content_right_top_6{
+    background-color: white;
+    width:20%;
+    margin-left: 5px;
+}
+
+.product-list{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product-list img{
+    width: 140px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*@media (max-width: 739px) {
+    .product-list{
+      flex-direction: column;
+    }}*/
+@media (max-width: 739px){
+        .product-list {
+        }
+        .content_left{
+            display: none;
+        }
+        .mobile.top{
+            display: block;
+        }
+        .content_right_top_1{
+            display: none;
+        }
+        .content_right_top{
+            background-color: white;
+        }
+        .content_right_top_3{
+            background-color: white;
+            color: black;
+        }
+        .content_right_top_5{
+            background-color: white;
+            color: red;
+        }
+        .content_right_top_7{
+            background-color: white;
+            color: red;
+        }
+        .content_right_top_6{
+            display: none;
+        }
+        .content_right_top{
+            text-align: center;
+            width: 100%;
+            margin: 0;
+            display:flex;
+            justify-content: space-around;
+           
+        }
+    }
