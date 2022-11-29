@@ -1,0 +1,122 @@
+/* mobile */
+@media (max-width: 739px){
+    :root{
+        --main-color: rgb(0, 77, 64);
+        --sub-color: rgb(0, 137, 114);
+        --white-color: #fff;
+        --text-color: #000;
+    }
+    .header{
+        height: 120px;
+    }
+    .header .info{
+        display: none;
+    }
+    hr{
+        display: none;
+    }
+    .menu-logo .part-left .logo{
+        margin-left: 180px;
+        margin-top: -30px;
+    }
+    .menu-logo .logo img{
+        width: 180px;
+    }
+    .menu{
+        display: none;
+    }
+    .part-right{
+        display: none;
+    }
+    .menu-mobile{
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin: -20px 36px 0;
+    }
+    .menu-mobile i{
+        font-size: 20px;
+        color: var(--main-color);
+    }
+    .search-mobile{
+        background: var(--white-color);
+        padding: 4px 12px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+        border-radius: 20px;
+    }
+    .search-mobile input[type=text]{
+        border: none;
+    }
+   
+    
+    #hidden{
+        display: none;
+    }
+    .main .container{
+        margin-top: -28px;
+    }
+    .grid{
+        width: 90%;
+    }
+    .new-product-item{
+        margin-top: 12px;
+    }
+    .collection-line{
+        display: flex;
+        flex-direction: column;
+    }
+    .collection-content{
+        margin: 0;
+    }
+    .collection-content h4{
+        font-size: 18px;
+    }
+    .collection-content p{
+        font-size: 16px;
+
+    }
+    .collection-content a{
+        font-size: 18px;
+    }
+    .letter{
+        display: none;
+    }
+    .customer-list{
+        flex-direction: column;
+    }
+    .customer-item{
+        text-align: center;
+        margin-bottom: 12px;
+    }
+    .footer-container{
+        flex-direction: column;
+    }
+    .intro{
+        display: none;
+    }
+    .help ul{
+        display: none;
+    }
+    .contact ul,
+    .map{
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+}
